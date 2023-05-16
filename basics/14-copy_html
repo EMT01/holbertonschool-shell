@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ ! -e "../$file" ] || [ "$file" -nt "../$file"
+ln -s /bin/ls ls
