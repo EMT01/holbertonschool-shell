@@ -1,2 +1,2 @@
 #!/bin/bash
-mv "$file" /u/
+mv "$file" /u
