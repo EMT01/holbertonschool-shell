@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#second line must be comment
 i=1
 while [ $i -le 20 ]
 do
