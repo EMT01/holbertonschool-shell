@@ -1,7 +1,4 @@
 #!/usr/bin/env bash
 #the script to stop th file process withouth using kill or killall
 
-if [ -n "$pid" ]; then
-	echo "Stopping 4-to_infinity_and_beyond process with PID $pid"
-	pkill -p $pid
-fi
+ps -aux f
