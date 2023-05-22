@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#stopping the file proceses
+
+kill $(ps aux | grep '4-to_infinity_and_beyond' | awk'{print $2}')
