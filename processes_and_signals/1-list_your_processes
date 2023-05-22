@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #the bash script to displays list of currently running processes
 
-ps axjf
+ps -eo pid,user,pcpu,pmem,stat,time,args --sort=-pcpu | awk '{print $1, $2, $3"%", $4"%", $5, $6, $7}' | head -n 11
