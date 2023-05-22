@@ -1,21 +1,9 @@
 #!/usr/bin/env bash
 #7-clock
 hour=0
-while [ $hour -le 12 ]
-do
-	minute=1
-	while [ $minute -le 59 ]
-	do
-		if [ $hour -eq 0 ]
-		then
-			echo "12:$minute AM"
-		elif [ $hour -lt 10 ]
-		then
-			echo "0$hour:minute AM"
-			rlif [ $hour -eq 12 ]
-		then
-			echo "12:$minute PM"
-		fi
-
+minute=1
+while [ 0..12 ]
+	hour=$((hour+1))
+	while [ 1..59 ]
 		minute=$((minute+1))
 	done
