@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
 #show bash PID made easy
 
-for pid in /proc/[0-9]*
-do
-	    if [ -f "$pid/cmdline" ] && grep -q bash "$pid/cmdline"; then
-		            echo "$(basename $pid) $(tr '\0' ' ' < $pid/cmdline)"
-			        fi
-			done
+pgrep -l bash
