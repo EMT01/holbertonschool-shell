@@ -2,6 +2,7 @@
 #7-clock
 hour=0
 minute=1
+
 while [ $hour -le 12 ]
 do
 	while [ $minute -le 59 ]
