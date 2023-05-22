@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#the script to stop th file process withouth using kill or killall
+
+PID=$(pgrep 4-to_infinity_and_beyond)
