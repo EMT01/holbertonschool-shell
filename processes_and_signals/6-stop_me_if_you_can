@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #the script to stop th file process withouth using kill or killall
 
-ps -aux f
+pkill -f 4-to_infinity_and_beyond
