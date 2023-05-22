@@ -2,7 +2,7 @@
 #script that gives you information about the school file. 
 for i in {1..100}
 do
-	if [ $((!%3)) -eq 0 ] && [ $((i%5)) -eq 0 ]
+	if [ $((i%3)) -eq 0 ] && [ $((i%5)) -eq 0 ]
 	then
 	 echo "FizzBuzz"
 	elif [ $((i%3)) -eq 0 ]
