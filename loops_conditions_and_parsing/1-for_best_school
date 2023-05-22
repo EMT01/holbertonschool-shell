@@ -1,4 +1,4 @@
-#!/usr/bin/envbash
+#!/usr/bin/env bash
 #idontknow
 for _ in {1..10}
 do
