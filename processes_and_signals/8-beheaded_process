@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#killing the file process before this file
+#!killing highlander process
 
 pkill -f 7-highlander.sh
