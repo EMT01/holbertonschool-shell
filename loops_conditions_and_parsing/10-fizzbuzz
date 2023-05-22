@@ -14,4 +14,4 @@ do
 	else
 	 echo $i
 	fi
-do
+done
