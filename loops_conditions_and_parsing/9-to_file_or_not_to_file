@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #this week is crazy never give up
-if [ -e"school" ]
+if [ -e "school" ]
 then
-	echo"school file exists"
+	echo "school file exists"
 	if [ -s "school" ]
 	then
 		echo "school file is not empty"
