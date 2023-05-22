@@ -3,24 +3,24 @@
 hour=0
 while [ $hour -le 12 ]
 do
-    minute=1
-    while [ $minute -le 59 ]
-    do
-        if [ $hour -eq 0 ]
-        then
-            echo "12:$minute AM"
-        elif [ $hour -lt 10 ]
-        then
-            echo "0$hour:$minute AM"
-        elif [ $hour -eq 12 ]
-        then
-            echo "12:$minute PM"
-        else
-            echo "$hour:$minute PM"
-        fi
+	    minute=1
+	        while [ $minute -le 59 ]
+			    do
+				            if [ $hour -eq 0 ]
+						            then
+								                echo "12:$minute AM"
+										        elif [ $hour -lt 10 ]
+												        then
+														            echo "0$hour:$minute AM"
+															            elif [ $hour -eq 12 ]
+																	            then
+																			                echo "12:$minute PM"
+																					        else
+																							            echo "$hour:$minute PM"
+																								            fi
 
-        minute=$((minute+1))
-    done
+																									            minute=$((minute+1))
+																										        done
 
-    hour=$((hour+1))
-done | head -n 70
+																											    hour=$((hour+1))
+																										    done
