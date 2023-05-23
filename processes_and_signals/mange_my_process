@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-#WOW
-
+#ANYTHING
 while true;
 do
 	echo "I am alive!" >> /tmp/my_process
