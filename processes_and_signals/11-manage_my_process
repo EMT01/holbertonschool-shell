@@ -5,7 +5,7 @@ ANYTHING=/var/run/my_process.pid
 
 case "$1" in
 	start)
-		./mange_my_process &
+	        bash manage_my_process &
 		echo $! > $ANYTHING
 		echo "mange_my_process started"
 		;;
@@ -17,10 +17,14 @@ case "$1" in
 	restart)
 		kill "$(cat $ANYTHING)"
 		rm $ANYTHING
-		./mange_my_process &
+		bash mange_my_process &
 		echo $! > $ANYTHING
 		echo "mange_my_process restarted"
 		;;
 	*)
 		echo "Usage: mange_my_process {start|stop|restart}"
+		exit 1
+		;;
 esac
+
+exit 0
