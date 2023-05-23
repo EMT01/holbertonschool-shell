@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 #why you know love me 
-
 trap "echo Y U no love me?!" SIGINT
 trap "echo I hate the kill command; rm /var/run/myscript.pid; exit" SIGQUIT SIGTERM
 i=1
@@ -8,8 +7,7 @@ while [ "$i" -gt 0 ]
 do
 	if [ "$i" -eq 1 ]
 	then
-		echo -e '#!/usr/bin/env bash\npgrep -f myscripts.pid -l' > /var/run/myscript.
-pid
+		echo -e '#!/usr/bin/env bash\npgrep -f myscripts.pid -l' > /var/run/myscript.pid
 	fi
 	if [ "$i" -eq 2 ]
 	then
